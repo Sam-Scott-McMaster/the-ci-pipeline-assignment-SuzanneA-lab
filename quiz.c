@@ -15,7 +15,7 @@ int main(int argc, char *argv[]){
     char *right = "Correct!!!\n";
     char *wrong = "Incorrect!!!\n";
     
-    /*if no arguments are provided when run, program prints help message and returns EXIT_FAILURE*/
+    /*if no arguments are provided when run, the program prints a help message and returns EXIT_FAILURE*/
     if (argc < 2) {
         printf("Usage: quiz [-#] [<answer>]\n");
         printf("Try 'quiz --help' for more information\n");
