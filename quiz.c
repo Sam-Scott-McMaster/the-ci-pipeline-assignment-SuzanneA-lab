@@ -26,12 +26,13 @@ int main(int argc, char *argv[]){
     else if (strcmp(argv[1],"--help")== 0){
         printf("Usage: quiz [QUESTION#]... [ANSWER]\n");
         printf("Checks answers to quiz questions relating to linux, git and C\n");
-        printf("\nWithout answer, prints question.\n");
-        printf("\n  -1  prints      quiz question 1\n");
+        printf("Note: answers should be entered in all lowercase characters\n");
+        printf("\nWithout answer, prints question.\n\n");
+        printf("    -1              prints quiz question 1\n");
         printf("    -1 'Answer'     gives feedback on whether answer to question 1 is correct or incorrect\n");
-        printf("    -2  prints      quiz question 2\n");
+        printf("    -2              prints quiz question 2\n");
         printf("    -2 'Answer'     gives feedback on whether answer to question 2 is correct or incorrect\n");
-        printf("    -3  prints      quiz question 3\n");
+        printf("    -3              prints quiz question 3\n");
         printf("    -3 'Answer'     gives feedback on whether answer to question 3 is correct or incorrect\n");
         printf("    --help      display this help and exit\n");
         printf("\nExamples:\n");
@@ -100,7 +101,8 @@ int main(int argc, char *argv[]){
         }
         
         else {
-            printf("error inside > 1");
+            printf("Usage: quiz [-#] [<answer>]\n");
+            printf("Try 'quiz --help' for more information\n");
             return EXIT_FAILURE;
         }
 
