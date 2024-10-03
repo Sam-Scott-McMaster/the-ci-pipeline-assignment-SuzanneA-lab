@@ -38,7 +38,7 @@ int main(int argc, char *argv[]){
         printf("\nExamples:\n");
         printf("quiz -1     output quiz question 1\n");
         printf("quiz -2 'Visual studio code'    compares input to answer and outputs 'Incorrect!!!'\n");
-
+	return EXIT_SUCCESS;
     }
 
     /*if one argument is provided when run, loop checks the argument against valid variables entries 
