@@ -116,7 +116,7 @@ int main(int argc, char *argv[]){
         return EXIT_FAILURE;
     }
     
-    /*if code block is completed succesfully, the program returns EXIT_SUCCESS*/
+    /*if a code block is completed succesfully, the program returns EXIT_SUCCESS*/
     return EXIT_SUCCESS;
 
     }
